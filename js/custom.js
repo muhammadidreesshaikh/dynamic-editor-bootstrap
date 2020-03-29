@@ -6,6 +6,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+// nav-bar
+function toggleMenu(x) {
+  x.classList.toggle("change");
+  document.querySelector(".side-section").classList.toggle("active");
+}
+
 // accordian
 var acc = document.getElementsByClassName("accordion");
 var i;
