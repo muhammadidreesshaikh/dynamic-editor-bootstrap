@@ -130,6 +130,7 @@ table.table td, table.table th {
     position: absolute;
     top: 10px;
     left: 15px;
+    display: none;
 }
 
 .bar1, .bar2, .bar3 {
@@ -150,6 +151,7 @@ table.table td, table.table th {
 }
 
 @media only screen and (max-width: 600px) {
+    .toggleMenu{display: block;}
     .side-section {
         position: fixed;
         top: 50px;
