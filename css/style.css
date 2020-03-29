@@ -28,13 +28,34 @@ a {
     text-decoration: none !important;
 }
 
+.left-sec {
+    width: 20%;
+    /* position: relative; */
+    top: 0;
+    z-index: 1;
+    left: 0;
+    transition: 0.5s;
+}
+
+.left-sec.active {
+    position: fixed;
+    left: -100%;
+}
+
+.right-sec.active{
+    width: 100%;
+}
+
+.right-sec {
+    width: 80%;
+}
+
 .b-gray {
     background: #e4e4e4;
 }
 
 .side-section {
     height: 100vh;
-    transition: 0.4s;
 }
 
 .side-section ul li {
@@ -124,42 +145,73 @@ table.table td, table.table th {
 
 .header {
     height: 50px;
+    position: relative;
 }
 
 .toggleMenu{
     position: absolute;
     top: 10px;
-    left: 15px;
-    display: none;
+    left: 20px;
+    cursor: pointer;
+    /* display: none; */
 }
 
 .bar1, .bar2, .bar3 {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: #828282;
     margin: 5px 0;
     transition: 0.4s;
 }
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-    transform: rotate(-45deg) translate(-5px, 5px);
+
+@media only screen and (max-width: 600px) {
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .change .bar2 {opacity: 0;}
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-7px, -7px);
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
 }
-.change .bar2 {opacity: 0;}
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-7px, -7px);
-    transform: rotate(45deg) translate(-7px, -7px);
+
+p.top-bar a {
+    float: right;
+    color: #828282;
+    padding: 2px 5px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: 0.4s;
+}
+
+p.top-bar a:hover
+{
+    background: #828282;
+    color: #f8f9fa;
+    border: 1px solid #828282;
+}
+
+p.top-bar a i {padding: 0;}
+
+.right-sec .table-responsive
+{
+    padding: 15px;
 }
 
 @media only screen and (max-width: 600px) {
-    .toggleMenu{display: block;}
-    .side-section {
+    .left-sec {
         position: fixed;
         top: 50px;
-        z-index: 1;
         width: 100%;
         left: -100%;
     }
-    .side-section.active {
+    .left-sec.active {
         left: 0;
+    }
+    .right-sec{
+        width: 100%;
     }
 }

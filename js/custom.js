@@ -9,7 +9,8 @@ function closeNav() {
 // nav-bar
 function toggleMenu(x) {
   x.classList.toggle("change");
-  document.querySelector(".side-section").classList.toggle("active");
+  document.querySelector(".left-sec").classList.toggle("active");
+  document.querySelector(".right-sec").classList.toggle("active");
 }
 
 // accordian
