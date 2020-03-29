@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGO</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 pl-0 pr-0">
+                <div class="side-section bg-light">
+                    <p class="p-2 b-gray"><b>4dynamic Editor</b></p>
+                    
+                    <button class="accordion border-top border-bottom">
+                        <span>Menu</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="panel" style="display: block;">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> toDo</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> instructor</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> trainings</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion border-top border-bottom">
+                        <span>Menustructur</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> toDo</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> instructor</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> trainings</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion border-top border-bottom">
+                        <span>Status/Ambelden</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> toDo</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> instructor</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt pr-2"></i> trainings</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-10 pl-0 pr-0">
+                <div class="right-section p-3">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link tablinks active" onclick="openTab(event, 'kurstermine-alle')">kurstermine alle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tablinks" onclick="openTab(event, 'kurstermine-eingeben')">kurstermine eingeben</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tablinks" onclick="openTab(event, 'sample')">sample</a>
+                        </li>
+                    </ul>
+
+                    <div class="bg-light bar">
+                        <div class="row">
+                            <div class="col-2">
+                                <select class="custom-select form-control-sm">
+                                    <option selected>in der Zunkunft</option>
+                                    <option value="1">in der Zunkunft</option>
+                                    <option value="2">in der Zunkunft</option>
+                                    <option value="3">in der Zunkunft</option>
+                                </select>
+                            </div>
+                            <div class="col-2">
+                                <select class="custom-select form-control-sm">
+                                    <option selected>2020</option>
+                                    <option value="1">2020</option>
+                                    <option value="2">2020</option>
+                                    <option value="3">2020</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-light bar">
+                        <a href="#" class="text-success"><i class="fas fa-sync"></i></a>
+                        <a href="#" class="text-success"><i class="fas fa-file-excel"></i></a>
+                        <a href="#" class="text-dark"><i class="fas fa-edit text-warning"></i>Bearbeiten</a>
+                        <a href="#" class="text-dark"><i class="fas fa-plus text-primary"></i>Nues Kurstermine</a>
+                        <a href="#" class="text-dark"><i class="fas fa-user text-success"></i>Telnehmer</a>
+                        <a href="#" class="text-dark"><i class="fas fa-plus text-primary"></i>Ts elmelden</a>
+                        <a href="#" class="text-dark"><i class="fas fa-check-square text-success"></i>Enladungen</a>
+                        <a href="#" class="text-dark"><i class="fas fa-calendar-minus text-info"></i>Nachrecht</a>
+                        <a href="#" class="text-dark"><i class="fas fa-times text-danger"></i>Storneren</a>
+                        <a href="#" class="text-dark"><i class="fas fa-tasks text-info"></i>Bosteinternein</a>
+                        <a href="#" class="text-dark"><i class="fas fa-th-large text-primary"></i>Module</a>
+                    </div>
+
+                    <!-- tabs  -->
+                    <div id="kurstermine-alle" class="tabcontent" style="display: block;">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Kurs-Nir</th>
+                                <th scope="col">Datnum</th>
+                                <th scope="col">Tag</th>
+                                <th scope="col">Watche</th>
+                                <th scope="col">Datnum</th>
+                                <th scope="col">Ende</th>
+                                <th scope="col">Tage</th>
+                                <th scope="col">max-TN</th>
+                                <th scope="col">TN-An</th>
+                                <th scope="col">Freire</th>
+                                <th scope="col">Referant</th>
+                                <th scope="col">Ort</th>
+                                <th scope="col">Firma</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Woche: 2013</td>
+                              </tr>
+                              <tr>
+                                <td>Woche: 2014</td>
+                              </tr>
+                              <tr>
+                                <td>Woche: 21-01</td>
+                              </tr>
+                              <tr>
+                                <td>Woche: 21-02</td>
+                              </tr>
+                              <tr class="bg-light">
+                                <td>Woche: 21-04</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr class="bg-light">
+                                <td>Woche: 21-04</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr class="bg-light">
+                                <td>Woche: 21-04</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                              <tr>
+                                <td>15611</td>
+                                <td>Erstle Hiftle</td>
+                                <td>12/05/2020</td>
+                                <td>Done</td>
+                                <td>12/05/2020</td>
+                                <td>08:09</td>
+                                <td>06:09</td>
+                                <td>1</td>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>15</td>
+                                <td>Raum 2</td>
+                                <td>Often</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="kurstermine-eingeben" class="tabcontent">
+                        <h3>kurstermine-eingeben</h3>
+                        <p>kurstermine-eingeben</p> 
+                    </div>
+                    
+                    <div id="sample" class="tabcontent">
+                        <h3>sample</h3>
+                        <p>sample</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
